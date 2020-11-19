@@ -1,14 +1,14 @@
-/*
+
 import React from 'react'
-import './Register.css';
-import axios from 'axios'
-import { useHistory } from 'react-router-dom';
-import { notification } from 'antd'
+
+//import axios from 'axios'
+//import { useHistory } from 'react-router-dom';
+//import { notification } from 'antd'
 const Register = () => {
 
-    const history = useHistory();
+    //const history = useHistory();
     const handleSubmit = async (event) => {
-        try {
+        /*try {
             event.preventDefault();
             const form = event.target;
             const user = {
@@ -22,7 +22,7 @@ const Register = () => {
         } catch (error) {
             console.error(error)
             notification.error({ message: 'Register failed', description: 'there was a problem trying to register the user' })
-        }
+        }*/
 
     }
 
@@ -38,4 +38,3 @@ const Register = () => {
 }
 
 export default Register
-*/
