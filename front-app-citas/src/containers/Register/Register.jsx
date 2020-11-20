@@ -1,14 +1,14 @@
 
 import React from 'react'
-
-//import axios from 'axios'
-//import { useHistory } from 'react-router-dom';
+import './Register.scss';
+import axios from 'axios'
+import { useHistory } from 'react-router-dom';
 //import { notification } from 'antd'
 const Register = () => {
 
-    //const history = useHistory();
+    const history = useHistory();
     const handleSubmit = async (event) => {
-        /*try {
+        try {
             event.preventDefault();
             const form = event.target;
             const user = {
@@ -17,21 +17,21 @@ const Register = () => {
                 password: form.password.value,
             }
             await axios.post('http://localhost:3001/users/signup', user)
-            notification.success({ message: 'Registered!', description: 'User successfully registered' })
+            //notification.success({ message: 'Registered!', description: 'User successfully registered' })
             history.push('/login')
         } catch (error) {
             console.error(error)
-            notification.error({ message: 'Register failed', description: 'there was a problem trying to register the user' })
-        }*/
+            //notification.error({ message: 'Register failed', description: 'there was a problem trying to register the user' })
+        }
 
     }
 
     return (
         <form className="register" onSubmit={handleSubmit}>
             <h1>Register</h1>
-            <input type="text" name="name" placeholder="Introduce your name" />
-            <input type="email" name="email" placeholder="Introduce your email" />
-            <input type="password" name="password" placeholder="Introduce your password" />
+            <input type="text" name="name" placeholder="Nombre" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Contraseña" />
             <button type="submit">Register</button>
         </form>
     )

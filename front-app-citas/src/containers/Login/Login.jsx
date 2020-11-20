@@ -1,8 +1,8 @@
-/*
+
 import axios from 'axios';
-import React from 'react';
+import React, {useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { notification } from 'antd';
+//import { notification } from 'antd';
 
 const Login = (props) => {
     const [email, setEmail] = useState('')
@@ -13,24 +13,41 @@ const Login = (props) => {
             event.preventDefault();
             const res = await axios.post('http://localhost:3001/users/login', {email,password})
             localStorage.setItem('token',res.data.token)
-            notification.success({ message: 'Logged in!', description: 'User successfully logged in' })
+            //notification.success({ message: 'Logged in!', description: 'User successfully logged in' })
             props.setUser(res.data.user)
             history.push('/')
         } catch (error) {
             console.error(error)
-            notification.error({ message: 'Login failed', description: 'there was a problem trying to login the user' })
+            //notification.error({ message: 'Login failed', description: 'there was a problem trying to login the user' })
         }
-        return (
-            <form className="register" onSubmit={handleSubmit}>
-                <h1>Login</h1>
-                <input type="email" onChange={event=>setEmail(event.target.value)} name="email" placeholder="Introduce your email" value={email}/>
-                <input type="password" onChange={event=>setPassword(event.target.value)} name="password" placeholder="Introduce your password" value={password}/>
-                <button type="submit">Login</button>
-            </form>
-        )
-    }
     
+    }
+    return (
+        <form className="register" onSubmit={handleSubmit}>
+            <h1>Login</h1>
+            <input type="email" onChange={event=>setEmail(event.target.value)} name="email" placeholder="Email" value={email}/>
+            <input type="password" onChange={event=>setPassword(event.target.value)} name="password" placeholder="Contraseña" value={password}/>
+            <button type="submit">Login</button>
+        </form>
+    )
+}
 
 
+// export class Login extends Component {
+//     constructor(props){
+//         super(props);
+//         this.state={
+//             email:'',
+//             password:''
+//         }
+//     }
+//     render() {
+//         return (
+//             <div>
 
-export default Login */
+//             </div>
+//         )
+//     }
+// }
+
+export default Login 
