@@ -11,5 +11,3 @@ En este proyecto he usado React.
 ● Vista registro de usuarios.
 ● Vista panel con muestreo de las citas 
 
-Github Pages
-Heroku
