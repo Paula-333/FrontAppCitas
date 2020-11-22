@@ -3,7 +3,7 @@ import React from 'react'
 import './Register.scss';
 import axios from 'axios'
 import { useHistory } from 'react-router-dom';
-//import { notification } from 'antd'
+import { notification } from 'antd'
 const Register = () => {
 
     const history = useHistory();
@@ -13,23 +13,27 @@ const Register = () => {
             const form = event.target;
             const user = {
                 name: form.name.value,
+                lastname: form.lastname.value,
+                number: form.number.value,
                 email: form.email.value,
                 password: form.password.value,
             }
-            await axios.post('http://localhost:3001/users/signup', user)
-            //notification.success({ message: 'Registered!', description: 'User successfully registered' })
+            await axios.post('https://clinia-dental-citas.herokuapp.com/user/createUser', user)
+            notification.success({ message: 'Registrado'})
             history.push('/login')
         } catch (error) {
-            console.error(error)
-            //notification.error({ message: 'Register failed', description: 'there was a problem trying to register the user' })
+            console.log('ERROR')
+            notification.error({ message: 'Error en registrarse',})
         }
 
     }
 
     return (
-        <form className="register" onSubmit={handleSubmit}>
-            <h1>Register</h1>
+        <form className="Register1" onSubmit={handleSubmit}>
+            <h1>¡Registrate!</h1>
             <input type="text" name="name" placeholder="Nombre" />
+            <input type="text" name="lastname" placeholder="Apellidos" />
+            <input type="text" name="number" placeholder="Telefono" />
             <input type="email" name="email" placeholder="Email" />
             <input type="password" name="password" placeholder="Contraseña" />
             <button type="submit">Register</button>

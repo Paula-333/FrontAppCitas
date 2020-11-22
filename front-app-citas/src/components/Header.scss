@@ -2,39 +2,77 @@
     display: flex;
     justify-content: space-around;
     padding: 0.2em 0.8em;
-    color: #f6f5f1;
+    
     background-color:  #fae0df;
-
-.home {
-    padding: 0.8em;
+    
+ a{
+     all: unset;
+     color: #f6f5f1;
+ }
+    
+.home1 {
+    padding: 0.9em;
     border-radius: 0.2em;
     cursor: pointer;
     background-color: #898b8a;
-    transition: all 0.2s;
+    transition: 0.2s;
     }
-.login {
-    padding: 0.8em;
-    border-radius: 0.2em;
-    margin: 0.5em;
-    cursor: pointer;
-    background-color: #898b8a;
-    transition: all 0.2s;
-    }
-.register {
+.login1 {
     padding: 0.8em;
     border-radius: 0.2em;
     margin: 0.5em;
     cursor: pointer;
     background-color: #898b8a;
-    transition: all 0.2s;
+    transition: 0.2s;
     }
-.home:hover{
+.register1 {
+    padding: 0.8em;
+    border-radius: 0.2em;
+    margin: 0.5em;
+    cursor: pointer;
+    background-color: #898b8a;
+    transition: 0.2s;
+    }
+.email {
+    padding: 0.8em;
+    border-radius: 0.2em;
+    margin: 0.5em;
+    cursor: pointer;
+    background-color: #898b8a;
+    transition: 0.2s;
+    }
+.logout {
+    padding: 0.8em;
+    border-radius: 0.2em;
+    margin: 0.5em;
+    cursor: pointer;
+    background-color: #898b8a;
+    transition: 0.2s;
+    }
+.citas {
+    padding: 0.8em;
+    border-radius: 0.2em;
+    margin: 0.5em;
+    cursor: pointer;
+    background-color: #898b8a;
+    transition: 0.2s;
+    }
+.home1:hover{
     background-color: #16a596;
 }
-.login:hover{
+.login1:hover{
     background-color: #16a596;
 }
-.register:hover{
+.register1:hover{
+    background-color: #16a596;
+}
+.email:hover{
+    background-color: #16a596;
+}
+.logout:hover{
+    background-color: #16a596;
+}
+.citas:hover{
     background-color: #16a596;
 }
 

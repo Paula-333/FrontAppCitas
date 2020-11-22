@@ -1,4 +1,4 @@
-form.register {
+.Register1{
     padding: 2em;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@ form.register {
     align-items: center;
 }
 
-.register input {
+.Register1 input {
     all: unset;
     padding: 1em;
     //width: fit-content;
@@ -15,7 +15,7 @@ form.register {
     background-color: #fae0df;
 }
 
-.register button {
+.Register1 button {
     all: unset;
     cursor: pointer;
     border-radius: 0.3em;
@@ -23,7 +23,7 @@ form.register {
     background-color:#f7caca;
     
 }
-.register button:hover {
+.Register1 button:hover {
     all: unset;
     cursor: pointer;
     border-radius: 0.3em;
