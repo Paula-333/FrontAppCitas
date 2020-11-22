@@ -1,0 +1,33 @@
+.Citas{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 25em;
+    align-items: center;
+}
+
+.Citas input {
+    all: unset;
+    padding: 1em;
+    //width: fit-content;
+    border-radius: 0.3em;
+    background-color: #fae0df;
+}
+
+.Citas button {
+    all: unset;
+    cursor: pointer;
+    border-radius: 0.3em;
+    padding: 1em;
+    background-color:#f7caca;
+    
+}
+.Citas button:hover {
+    all: unset;
+    cursor: pointer;
+    border-radius: 0.3em;
+    padding: 1em;
+    background-color:#16a596;
+    transition: 0.2s;
+}

@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-constructor */
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Citas from '../containers/Citas/CompCitas'
+import Citas from '../containers/Citas/Citas'
 import './Header.scss'
 const Header = (props) => {
     const logout = ()=>{

@@ -4,6 +4,7 @@ import './Register.scss';
 import axios from 'axios'
 import { useHistory } from 'react-router-dom';
 import { notification } from 'antd'
+
 const Register = () => {
 
     const history = useHistory();
@@ -41,4 +42,4 @@ const Register = () => {
     )
 }
 
-export default Register
+export default Register;

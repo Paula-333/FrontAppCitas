@@ -5,7 +5,7 @@ import Header from './components/CompHeader';
 import Register from './containers/Register/Register';
 import Home from './containers/Home/Home';
 import Login from './containers/Login/Login'
-import Citas from './containers/Citas/CompCitas'
+import Cita from './containers/Citas/Citas'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -28,7 +28,7 @@ function App() {
         <Route path="/" component={Home} exact/>
         <Route path="/register" component={Register} exact/>
         <Route path="/login" children={<Login user={user} setUser={setUser}/>} exact/>
-        <Route path="/:citas" component={Citas} exact/>
+        <Route path="/citas" component={Cita} exact/>
       </Switch>
     </BrowserRouter>
   );
